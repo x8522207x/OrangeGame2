@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="666" />
+    <meta property="og:image:height" content="364" />
+    <meta property="og:title" content="波拉西亞戰記-新地區:克隆" />
+    <meta property="og:description" content="波拉西亞戰記-新地區:克隆" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>波拉西亞戰記-新地區:克隆 | Wars of Prasia</title>
+    <link
+      rel="mask-icon"
+      href="img/icon/safari-pinned-tab.svg"
+      color="#162c32"
+    />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <!-- <script
+      type="text/javascript"
+      src="https://frontend.beanfun.com/plugins/game-footer/game-footer.js"
+      id="game-footer"
+      prod="波拉西亞"
+      theme="dark"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tw.beanfun.com/js/GA_CodeNew.js"
+    ></script> -->
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="plate_base">
+        <div class="scrollbar -none">
+          <div class="scrollbar_thumb">
+            <span></span>
+          </div>
+        </div>
+        <div class="cursor"></div>
+      </div>
+      <div id="plate_modal">
+        <div class="modal type--youtube">
+          <div
+            class="modal_dimmed"
+            style="background-color: rgba(0, 0, 0, 0.8)"
+          >
+            <div class="loading">
+              <div
+                class="spinner_wave_dots"
+                style="--42f2e9e9: rgba(100, 100, 100, 1)"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal_wrap"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+            "
+          >
+            <div class="modal_inner">
+              <div class="modal_box">
+                <div class="modal_box_theme"></div>
+                <div class="modal_box_veil">
+                  <div
+                    class="spinner_wave_dots"
+                    style="--42f2e9e9: rgba(100, 100, 100, 1)"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="modal_source">
+                  <span
+                    class="modal_source_ratio"
+                    style="padding-top: 56.4945%"
+                  ></span>
+                </div>
+              </div>
+              <button class="modal_close">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="toast_area"></div>
+      </div>
+      <div id="plate_nav">
+        <div class="nav_top">
+          <div
+            class="event_gnb type_clear"
+            style="
+              --75824c3e: rgba(27, 30, 34, 1);
+              --47759c69: rgba(255, 255, 255, 1);
+              --028dbcb1: rgba(122, 99, 67, 1);
+              --aa46ff86: rgba(0, 0, 0, 1);
+              --4fcf305d: rgba(255, 255, 255, 1);
+              --2c0e22cd: rgba(122, 99, 67, 0.05);
+            "
+          >
+            <div class="event_gnb_default">
+              <div class="event_gnb_default_wrap">
+                <div class="event_gnb_default_left">
+                  <button class="event_gnb_menu">
+                    <span></span>
+                  </button>
+                  <a
+                    href="https://warsofprasia.beanfun.com/Main"
+                    class="event_gnb_logo"
+                    target="_blank"
+                  >
+                    <img src="img/icon/LOGO-tw.png" class="icon" />
+                    <img src="img/icon/LOGO.png" class="mobile_icon" />
+                  </a>
+                </div>
+                <div class="event_gnb_default_right">
+                  <div class="event_gnb_gamestart">
+                    <button>GAME START</button>
+                  </div>
+                  <div class="event_gnb_links">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://warsofprasia.beanfun.com/Main"
+                          target="_blank"
+                        >
+                          <i class="i--home -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/warsofprasia.tw"
+                          target="_blank"
+                        >
+                          <i class="i--logo-fb -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/@user-warsofprasia"
+                          target="_blank"
+                        >
+                          <i class="i--logo-youtube -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event_gnb_teleport"></div>
+          </div>
+          <div id="nav_top_teleport"></div>
+        </div>
+        <button class="gotop">
+          <i class="i--gotop"></i>
+        </button>
+        <div class="event_banner" style="--618ead0a: 95px">
+          <span class="event_banner_dimmed"></span>
+          <div class="event_banner_content" style="margin-top: 0px">
+            <div class="event_banner_menu">
+              <button class="event_banner_menu_button">
+                <span>活動</span>
+              </button>
+            </div>
+            <div class="event_banner_content_wrap">
+              <a
+                href="https://warsofprasia.beanfun.com/Main"
+                class="event_banner_home"
+                target="_blank"
+              >
+                <div class="logo">
+                  <span></span>
+                  <img
+                    src="img/icon/LOGO-tw.png"
+                    alt=""
+                    class="visible_roomy"
+                  />
+                  <img
+                    src="img/icon/LOGO-tw.png"
+                    alt=""
+                    class="visible_mobile"
+                  />
+                </div>
+              </a>
+              <div class="event_banner_list">
+                <ul>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10634"
+                      class="event_banner_item"
+                      target="_blank"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_01.jpg" alt="" />
+                      </div>
+                      <div class="content">直升30等</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://tw.hicdn.beanfun.com/beanfun/promo/TWP/20240904/index.html"
+                      class="event_banner_item"
+                      target="_blank"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_02_on.jpg" alt="" />
+                      </div>
+                      <div class="content">鯨獅</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10431"
+                      class="event_banner_item"
+                      target="_blank"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_03.jpg" alt="" />
+                      </div>
+                      <div class="content">WPC</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="event_banner_store">
+                <a
+                  href="https://play.google.com/store/apps/details?hl=zh-TW&id=com.gamania.twp&referrer=adjust_reftag%3Dc1yWGEH0cDaIG%26utm_source%3D%25E6%25AD%25A3%25E5%25BC%258F%25E5%25AE%2598%25E7%25B6%25B2_AOS"
+                  target="_blank"
+                >
+                  <img
+                    src="img/icon/btn-download-gp.png"
+                    alt="Google Play下載"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/tw/app/%E6%B3%A2%E6%8B%89%E8%A5%BF%E4%BA%9E%E6%88%B0%E8%A8%98/id6451229143"
+                  target="_blank"
+                >
+                  <img
+                    src="img/icon/btn-download-as.png"
+                    alt="Apple Store下載"
+                  />
+                </a>
+                <a
+                  href="https://warsofprasia.beanfun.com/Download?downloadTarget=1"
+                  target="_blank"
+                >
+                  <img src="img/icon/btn-download-pc.png" alt="PC下載" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="plate_page"
+        style="--72516594: 0px; --9617c380: 0px; --cfc4fde0: 0px"
+      >
+        <div class="page_events_sunkeeper">
+          <div class="particles" style="opacity: 1">
+            <div id="particle-snow"></div>
+          </div>
+          <div class="audiobg" style="--5d5aab89: #cfcfcf">
+            <button class="audio_toggle">
+              <div class="equalizer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>
+                <span class="mask_text trs_width">
+                  <div></div>
+                </span>
+                <span class="status">
+                  <div class="mask_text">off</div>
+                </span>
+              </p>
+            </button>
+          </div>
+          <div class="nav_side">
+            <ol>
+              <li class="depth_1">
+                <button class="page_p1">命運之地2次改版</button>
+              </li>
+              <li class="depth_1">
+                <button class="page_p2">新地區:克隆</button>
+              </li>
+              <li class="depth_2">
+                <button class="page_p3">新狩獵場</button>
+              </li>
+              <li class="depth_2">
+                <button class="page_p4">狩獵場首領(4種)</button>
+              </li>
+              <li class="depth_2">
+                <button class="page_p5">克隆的人物</button>
+              </li>
+            </ol>
+          </div>
+          <div class="section-pages swiper-container">
+            <div class="page-group swiper-wrapper">
+              <div
+                class="swiper-slide swiper-slide-page"
+                data-title="命運之地2次改版"
+              >
+                <section class="section_hero area" id="page1">
+                  <div class="visual">
+                    <span class="dimmed"></span>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      class="visible_roomy"
+                    >
+                      <source src="./img/page1/video_hero_loop.mp4" />
+                    </video>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      poster="./img/page1/poster_hero_loop_m.jpg"
+                      class="visible_mobile"
+                    >
+                      <source src="./img/page1/video_hero_loop_m.mp4" />
+                    </video>
+                  </div>
+                  <div class="content">
+                    <div class="content_wrap">
+                      <div class="header">
+                        <p class="subtitle"></p>
+                        <p class="subtitle2">生物都消失的酷寒之地</p>
+                        <h2 class="title animate">
+                          <span> </span>
+                        </h2>
+                      </div>
+                      <div class="detail_p1 animate">
+                        <p class="date">2023.11.06（三）更新</p>
+                        <button class="video_open"></button>
+                      </div>
+                      <button class="scroll"></button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="新地區：克隆"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section_krohn area">
+                  <div class="visual">
+                    <span class="dimmed_p2"></span>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      class="visible_roomy"
+                    >
+                      <source src="./img/page2/video_s1_loop.mp4" />
+                    </video>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      poster="./img/page2/poster_s1_loop_m.jpg"
+                      class="visible_mobile"
+                    >
+                      <source src="./img/page2/video_s1_loop_m.mp4" />
+                    </video>
+                  </div>
+                  <div class="content">
+                    <div class="content_wrap">
+                      <div class="header">
+                        <h2 class="title_p2 color_1">
+                          <span>
+                            新地區
+                            <strong>克隆</strong>
+                          </span>
+                        </h2>
+                        <div class="detail_p2 animate">
+                          <p>
+                            被萬年雪和冰河、茂密的針葉樹林籠罩的酷寒之地-克隆。
+                            <br />在暴風雪來襲的寒氣和酷寒席捲的漫長冬天之中，連妖精都放棄的土地，
+                            <br />但，此處也存在著適應寒冷猛獸和以各自方式生存著的人們！
+                          </p>
+                        </div>
+                      </div>
+                      <div class="subcontent">
+                        <button class="video_open"></button>
+                        <ul class="arealist">
+                          <li>棉懶冰道</li>
+                          <li>雪花冰河駐紮地</li>
+                          <li>冰霜懸涯駐紮地</li>
+                          <li>雪風海岸領地</li>
+                          <li>白夜城要塞</li>
+                        </ul>
+                        <a
+                          href=""
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          class="link-button"
+                          >點擊查看 CM Note(連結待補)</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div data-title="新狩獵場" class="swiper-slide swiper-slide-page">
+                <section class="section_ground area">
+                  <div class="visual">
+                    <span class="dimmed_p3"></span>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      class="visible_roomy"
+                    >
+                      <source src="./img/page3/video_s2_loop.mp4" />
+                    </video>
+                    <video
+                      loop
+                      autoplay
+                      muted
+                      playsinline
+                      poster="./img/page3/poster_s2_loop_m.jpg"
+                      class="visible_mobile"
+                    >
+                      <source src="./img/page3/video_s2_loop_m.mp4" />
+                    </video>
+                  </div>
+                  <div class="content">
+                    <div class="content_wrap">
+                      <div class="header">
+                        <div class="title_p3 color_1">
+                          <span>
+                            <strong>克隆</strong>
+                            狩獵場
+                          </span>
+                        </div>
+                        <div class="detail_p3">
+                          <p>
+                            克隆雖然是個生活環境惡劣的地方，但如果你能適應它的話，
+                            <br />
+                            相對來說，這也是一個你可以躲避威脅事務，集結勢力的地方。
+                            <br />
+                            <br />
+                            在非常久以前的戰爭中遺留下來的、那些已適應這裡的事物，
+                            <br />
+                            以及想要在克隆中尋找新機會的人們現在也在克隆的結冰冰原和叢林中流浪著。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="subcontent">
+                        <ul class="list_ground">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                        <ul class="list_level">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="狩獵場首領(4種)"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section_boss area" id="page4">
+                  <div class="visual"></div>
+                  <div class="content">
+                    <div class="content_wrap">
+                      <div class="header">
+                        <h2 class="title_p4 color_1">
+                          <span>
+                            狩獵場
+                            <strong>首領</strong>
+                          </span>
+                        </h2>
+                        <div class="detail_p4">
+                          <p>
+                            黎奈亞的生命體為了在克隆酷寒環境中生存下，不斷地以各自方式來發展下去。
+                            <br />
+                            只有在克隆才能看到的棉懶正在擴充勢力，並擴大他們的領域。
+                            <br />
+                            <br class="visible_roomy" />
+                            比較特別的地方是不僅是黎奈亞的生命體，
+                            也有發現之前只會在時空縫隙才會看到的古代妖精的創造物，
+                            <br class="visible_roomy" />
+                            好像已適應克隆的酷寒天氣的足跡。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="subcontent">
+                        <ul>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="克隆的人物"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section_npc area" id="page5">
+                  <div class="visual"></div>
+                  <div class="content">
+                    <div class="content_wrap">
+                      <div class="header">
+                        <h2 class="title_p5 color_1">
+                          <span>
+                            <strong>克隆</strong>
+                            的人物
+                          </span>
+                        </h2>
+                        <p class="subtitle">增加克隆/派系劇情</p>
+                      </div>
+                      <div class="subcontent">
+                        <div class="portrait">
+                          <span class="n_1"></span>
+                          <span class="n_2"></span>
+                          <span class="n_3"></span>
+                          <span class="n_4"></span>
+                          <span class="n_5"></span>
+                        </div>
+                        <ul class="list">
+                          <li>
+                            <button>
+                              <span>克雷曼斯</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button>
+                              <span>雅爾</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button>
+                              <span>猶達斯</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button>
+                              <span>亞斯特里德</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button>
+                              <span>尼克丹</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content -fly">
+                    <div class="info">
+                      <div class="info_wrap n_0">
+                        <div class="ornate"></div>
+                        <div class="name" style="flex-basis: 205px">
+                          <strong>克雷曼斯</strong>
+                          <span>白夜城</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <p>
+                          白夜手派系的幕後實權者。不知道什麼原因，他正緊追著雅爾。
+                        </p>
+                      </div>
+                      <div class="info_wrap n_1">
+                        <div class="ornate"></div>
+                        <div class="name">
+                          <strong>雅爾</strong>
+                          <span>雪風海岸</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <p>猶達斯之子，有著純真之心和堅定的意志。</p>
+                      </div>
+                      <div class="info_wrap n_2">
+                        <div class="ornate"></div>
+                        <div class="name" style="flex-basis: 155px">
+                          <strong>猶達斯</strong>
+                          <span>雪花冰河</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <p>
+                          白夜手的首領掌握著黎奈亞的資訊，不管用什麼手段，都要守護雅爾．
+                        </p>
+                      </div>
+                      <div class="info_wrap n_3">
+                        <div class="ornate"></div>
+                        <div class="name" style="flex-basis: 270px">
+                          <strong>亞斯特里德</strong>
+                          <span>冰霜懸涯</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <p>
+                          為調香師的首領，儘管沒有成為香射手，仍擁有出眾的能力。
+                        </p>
+                      </div>
+                      <div class="info_wrap n_4">
+                        <div class="ornate"></div>
+                        <div class="name" style="flex-basis: 175px">
+                          <strong>尼克丹</strong>
+                          <span>雪花冰河</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <p>
+                          出身於銀環的白夜手，因猶達斯的幫助而撿回一命之後，便決定效忠於猶達斯。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
