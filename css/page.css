@@ -261,6 +261,10 @@
     overflow-y: overlay;
 }
 
+.section-pages>.swiper-wrapper>.swiper-slide.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
 .section-pages>.swiper-wrapper>.swiper-slide {
     max-height: var(--maxvh);
     overflow: hidden;
