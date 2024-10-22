@@ -6,24 +6,18 @@ $(document).ready(() => {
         $('.modal_wrap').css('display', '');
     }, 1000);
 
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-
-    function playSound() {
-        const source = audioContext.createBufferSource();
-        fetch('../music/bgm.wav')
-            .then(response => response.arrayBuffer())
-            .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
-            .then(audioBuffer => {
-                source.buffer = audioBuffer;
-                source.connect(audioContext.destination);
-                source.start();
-            });
-    }
-
+    const audio = document.getElementById('audioPlayer');
+    audio.currentTime = 4;
     $('.audio_toggle').on('click', () => {
-        $('.mask_text')[1].innerText = $('.mask_text')[1].innerText === 'on' ? 'off' : 'on';
+        $('.audio_toggle').toggleClass('play');
+        if ($('.mask_text')[1].innerText === 'on') {
+            $('.mask_text')[1].innerText = 'off';
+            audio.pause();
+        } else {
+            $('.mask_text')[1].innerText = 'on';
+            audio.play();
+        }
     });
-    document.querySelector('.audio_toggle').addEventListener('click', playSound);
 
 
     ['.event_banner', '.event_gnb_menu'].forEach(ele => $(ele).on('click', () => {
@@ -166,7 +160,7 @@ $(document).ready(() => {
             },
             loop: false,
             freeMode: {
-                enabled: true,
+                enabled: false,
                 sticky: false,
                 momentumBounce: false,
             },

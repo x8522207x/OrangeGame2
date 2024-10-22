@@ -835,9 +835,9 @@ html {
 }
 
 .event_gnb_default .event_gnb_default_right .event_gnb_gamestart button {
-    background-color: #b3b3b3;
+    background-color: rgba(139, 114, 72, 1);
     border: 1px solid #0000;
-    color: #4d4b48;
+    color: rgba(255, 255, 255, 1);
     font-family: 'noto serif tc';
     font-weight: 500;
     height: 100%;
@@ -881,7 +881,7 @@ html {
 
 .event_gnb_default .event_gnb_default_right .event_gnb_links ul li a:before {
     background-color: var(--d3dfcfa2);
-    border: 1px solid #b3b3b3;
+    border: 1px solid rgba(139,114,72,1);
     box-sizing: border-box;
     content: "";
     display: inline-block;
@@ -898,7 +898,7 @@ html {
 }
 
 .event_gnb_default .event_gnb_default_right .event_gnb_links ul li a i {
-    background-color: #b3b3b3;
+    background-color: rgba(139,114,72,1);
     transition: background-color .16s ease;
 }
 
@@ -1314,7 +1314,7 @@ button {
     }
 
     .nav_side {
-        display: none;
+        display: none !important;
     }
 }
 

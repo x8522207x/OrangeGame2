@@ -55,6 +55,14 @@
     white-space: nowrap;
 }
 
+.audio_toggle.play {
+    opacity: 1;
+}
+
+.audio_toggle.play .equalizer>span {
+    animation-play-state: running;
+}
+
 .audio_toggle .equalizer {
     display: inline-flex;
     flex-direction: column;
@@ -1314,6 +1322,7 @@ section.area .content .content_wrap .header .title_p5 strong {
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-basis: 205px;
 }
 
 .section_npc .content .info .info_wrap .name strong {
@@ -1712,14 +1721,8 @@ section.area .content .content_wrap .header .title_p5 strong {
         background-image: url(../img/page5/s5_button_5_active_m.png);
     }
 
-    section.area .content>:not(.layout-escape) {
-        max-width: 572px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
     .section_npc .content .info {
-        height: calc(44vh - 130px);
+        height: calc(44vh - 130px) !important;
     }
 
     .section_npc .content .info .info_wrap {
@@ -1733,7 +1736,8 @@ section.area .content .content_wrap .header .title_p5 strong {
     }
 
     .section_npc .content .info .info_wrap .name {
-        flex-basis: 160px;
+        flex-basis: 100px;
+        min-width: 100px;
     }
 
     .section_npc .content .info .info_wrap .name strong {
@@ -1751,6 +1755,19 @@ section.area .content .content_wrap .header .title_p5 strong {
     .section_npc .content .info .info_wrap p {
         font-size: 10px;
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1200px) {
+    .section_ground .content .subcontent .list_ground li {
+        width: 37.32119635890767vw;
+        height: 37.32119635890767vw;
+        margin: -18px
+    }
+
+    .section_ground .content .subcontent .list_level {
+        flex-wrap: wrap;
+        max-width: 100vw;
     }
 }
 
@@ -1774,9 +1791,9 @@ section.area .content .content_wrap .header .title_p5 strong {
         width: 140px;
     }
 
-    .section_npc .content .info .info_wrap {
+    /* .section_npc .content .info .info_wrap {
         justify-content: center;
-    }
+    } */
 
     .section_npc .content .info {
         align-items: center;
@@ -1791,5 +1808,15 @@ section.area .content .content_wrap .header .title_p5 strong {
 
     100% {
         transform: translate3d(0, -10%, 0);
+    }
+}
+
+@keyframes equalizerWave {
+    0% {
+        transform: scaleX(.3);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }

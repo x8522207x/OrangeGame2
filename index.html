@@ -321,6 +321,9 @@
           <div class="particles" style="opacity: 1">
             <div id="particle-snow"></div>
           </div>
+          <audio id="audioPlayer" controls style="display: none;">
+            <source src="./music/bgm.wav" type="audio/wav" />
+          </audio>
           <div class="audiobg" style="--5d5aab89: #cfcfcf">
             <button class="audio_toggle">
               <div class="equalizer">
@@ -352,7 +355,7 @@
                 <button class="page_p3">新狩獵場</button>
               </li>
               <li class="depth_2">
-                <button class="page_p4">狩獵場首領(4種)</button>
+                <button class="page_p4">4種狩獵場首領</button>
               </li>
               <li class="depth_2">
                 <button class="page_p5">克隆的人物</button>
@@ -392,7 +395,7 @@
                     <div class="content_wrap">
                       <div class="header">
                         <p class="subtitle"></p>
-                        <p class="subtitle2">生物都消失的酷寒之地</p>
+                        <p class="subtitle2">萬物寂靜的酷寒之地</p>
                         <h2 class="title animate">
                           <span> </span>
                         </h2>
@@ -444,9 +447,9 @@
                         </h2>
                         <div class="detail_p2 animate">
                           <p>
-                            被萬年雪和冰河、茂密的針葉樹林籠罩的酷寒之地-克隆。
-                            <br />在暴風雪來襲的寒氣和酷寒席捲的漫長冬天之中，連妖精都放棄的土地，
-                            <br />但，此處也存在著適應寒冷猛獸和以各自方式生存著的人們！
+                            被萬年雪和冰河、茂密針葉樹林籠罩的酷寒之地—克隆。
+                            <br />這裡是暴風雪來襲、寒氣逼人的漫長冬天之中，連妖精都放棄的土地。
+                            <br />然而，這裡依然存在著適應寒冷的猛獸，以及以各自方式生存的人們！
                           </p>
                         </div>
                       </div>
@@ -464,7 +467,7 @@
                           rel="noopener noreferrer"
                           target="_blank"
                           class="link-button"
-                          >點擊查看 CM Note(連結待補)</a
+                          >點擊查看更新總覽(連結待補)</a
                         >
                       </div>
                     </div>
@@ -506,14 +509,14 @@
                         </div>
                         <div class="detail_p3">
                           <p>
-                            克隆雖然是個生活環境惡劣的地方，但如果你能適應它的話，
+                            克隆雖然是一個生活環境惡劣的地方，但如果你能適應這裡的挑戰，
                             <br />
-                            相對來說，這也是一個你可以躲避威脅事務，集結勢力的地方。
+                            反而成為一個躲避威脅、集結勢力的庇護所。
                             <br />
                             <br />
-                            在非常久以前的戰爭中遺留下來的、那些已適應這裡的事物，
+                            古老戰爭留下的痕跡，與那些已經適應這片土地的生物交織在一起，
                             <br />
-                            以及想要在克隆中尋找新機會的人們現在也在克隆的結冰冰原和叢林中流浪著。
+                            而如今，渴望在克隆中尋找新機會的人們也在這片結冰的冰原和茂密的叢林中漂泊著。
                           </p>
                         </div>
                       </div>
@@ -546,21 +549,20 @@
                       <div class="header">
                         <h2 class="title_p4 color_1">
                           <span>
-                            狩獵場
+                            4種狩獵場
                             <strong>首領</strong>
                           </span>
                         </h2>
                         <div class="detail_p4">
                           <p>
-                            黎奈亞的生命體為了在克隆酷寒環境中生存下，不斷地以各自方式來發展下去。
+                            黎奈亞的生命體為了在克隆酷寒的環境中生存，持續以各自獨特的方式發展壯大。
                             <br />
-                            只有在克隆才能看到的棉懶正在擴充勢力，並擴大他們的領域。
+                            此時，只有在克隆中才能見到的棉懶正在擴張勢力，並不斷擴大它們的領域。
                             <br />
                             <br class="visible_roomy" />
-                            比較特別的地方是不僅是黎奈亞的生命體，
-                            也有發現之前只會在時空縫隙才會看到的古代妖精的創造物，
+                            特別的是，除了黎奈亞的生命體外，還發現了曾僅在時空縫隙中出現的古代妖精的創造物，
                             <br class="visible_roomy" />
-                            好像已適應克隆的酷寒天氣的足跡。
+                            似乎已經適應了克隆的寒冷氣候，留下了它們的足跡。
                           </p>
                         </div>
                       </div>
@@ -635,11 +637,11 @@
                     <div class="info">
                       <div class="info_wrap n_0">
                         <div class="ornate"></div>
-                        <div class="name" style="flex-basis: 205px">
+                        <div class="name">
                           <strong>克雷曼斯</strong>
                           <span>白夜城</span>
                         </div>
-                        <span class="arrow"></span>
+                        <!-- <span class="arrow"></span> -->
                         <p>
                           白夜手派系的幕後實權者。不知道什麼原因，他正緊追著雅爾。
                         </p>
@@ -650,38 +652,38 @@
                           <strong>雅爾</strong>
                           <span>雪風海岸</span>
                         </div>
-                        <span class="arrow"></span>
+                        <!-- <span class="arrow"></span> -->
                         <p>猶達斯之子，有著純真之心和堅定的意志。</p>
                       </div>
                       <div class="info_wrap n_2">
                         <div class="ornate"></div>
-                        <div class="name" style="flex-basis: 155px">
+                        <div class="name">
                           <strong>猶達斯</strong>
                           <span>雪花冰河</span>
                         </div>
-                        <span class="arrow"></span>
+                        <!-- <span class="arrow"></span> -->
                         <p>
                           白夜手的首領掌握著黎奈亞的資訊，不管用什麼手段，都要守護雅爾．
                         </p>
                       </div>
                       <div class="info_wrap n_3">
                         <div class="ornate"></div>
-                        <div class="name" style="flex-basis: 270px">
+                        <div class="name">
                           <strong>亞斯特里德</strong>
                           <span>冰霜懸涯</span>
                         </div>
-                        <span class="arrow"></span>
+                        <!-- <span class="arrow"></span> -->
                         <p>
                           為調香師的首領，儘管沒有成為香射手，仍擁有出眾的能力。
                         </p>
                       </div>
                       <div class="info_wrap n_4">
                         <div class="ornate"></div>
-                        <div class="name" style="flex-basis: 175px">
+                        <div class="name">
                           <strong>尼克丹</strong>
                           <span>雪花冰河</span>
                         </div>
-                        <span class="arrow"></span>
+                        <!-- <span class="arrow"></span> -->
                         <p>
                           出身於銀環的白夜手，因猶達斯的幫助而撿回一命之後，便決定效忠於猶達斯。
                         </p>
