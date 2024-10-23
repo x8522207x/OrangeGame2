@@ -28,8 +28,12 @@ $(document).ready(() => {
         window.open("https://galaxy.beanfun.com/webapi/view/login/twp?redirect_url=https://warsofprasia.beanfun.com/Main");
     });
 
-    $('.detail_p4 .video-open').on('click', () => {
-        openVideo("xcoRVHz_jl4");
+    $('.detail_p1 .video_open').on('click', () => {
+        openVideo("_y8x_gah-_Y");
+    });
+
+    $('.subcontent .video_open').on('click', () => {
+        openVideo("3MKnWVeWpJw");
     });
 
     $('.modal_close').on('click', () => {
