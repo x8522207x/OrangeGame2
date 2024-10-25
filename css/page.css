@@ -407,7 +407,7 @@ section.area .content .content_wrap {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
 }
 
@@ -492,8 +492,8 @@ section.area .content .content_wrap .header .title span {
 }
 
 .section_hero .content .header .title span:first-child:before {
-    animation: flare-99de860c 2.5s cubic-bezier(.76, 0, .24, 1) infinite;
-    background-image: url(../img/page1/s0_titletext_2_effect.png);
+    animation: flare 2.5s cubic-bezier(.76, 0, .24, 1) infinite;
+    background-image: url(../img/page1/s0_titletext_2.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -524,7 +524,8 @@ section.area .content .content_wrap .header .title span {
     font-size: 34px;
     font-weight: 300;
     letter-spacing: .1em;
-    margin-top: 214px;
+    /* margin-top: 214px; */
+    margin-top: 20px;
     white-space: nowrap;
 }
 
@@ -1038,7 +1039,7 @@ section.area .content .content_wrap .header .title_p5 strong {
 
 .section_npc .content .subcontent .portrait {
     bottom: 0;
-    height: 1163px;
+    height: 940px;
     left: 50%;
     pointer-events: none;
     position: absolute;
@@ -1274,7 +1275,7 @@ section.area .content .content_wrap .header .title_p5 strong {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: max(330px, 24vh);
+    height: max(260px, 24vh);
     justify-content: center;
     left: 0;
     max-width: unset !important;
@@ -1357,6 +1358,16 @@ section.area .content .content_wrap .header .title_p5 strong {
 .section_npc .content .info .info_wrap p {
     color: #fff;
     font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    section.area .content .content_wrap .header {
+        margin-top: 150px;
+    }
+
+    #page4 {
+        position: unset;
+    }
 }
 
 @media (min-width: 769px) {
@@ -1769,6 +1780,10 @@ section.area .content .content_wrap .header .title_p5 strong {
         flex-wrap: wrap;
         max-width: 100vw;
     }
+
+    .section_boss .visual {
+        background-image: url(../img/page4/bg_ipad.jpg);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1818,5 +1833,17 @@ section.area .content .content_wrap .header .title_p5 strong {
 
     100% {
         transform: scaleX(1);
+    }
+}
+
+@keyframes flare {
+
+    0%,
+    20% {
+        clip-path: polygon(-5% 0, 0 0, -20% 100%, -25% 100%);
+    }
+
+    100% {
+        clip-path: polygon(120% 0, 125% 0, 105% 100%, 100% 100%);
     }
 }
