@@ -1382,6 +1382,7 @@ section.area .content .content_wrap .header .title_p5 strong {
 
     section.area .content .content_wrap {
         max-width: 1280px;
+        justify-content: center;
     }
 
     .section_npc .visual {
