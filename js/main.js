@@ -143,29 +143,30 @@ $(document).ready(() => {
                         $('.gotop').addClass('show');
                         // addAnimateClass(['.detail_p2', '.title_p2', '.dimmed_p2']);
                         $('.swiper-slide')[1].classList.add('scrollable');
-                        $('.depth_1')[1].classList.add('active');
-                        $('.depth_1')[1].classList.add('point');
+                        $('.depth_1')[0].classList.add('active');
+                        $('.depth_2')[0].classList.add('active');
+                        $('.depth_2')[0].classList.add('point');
                     } else if (swiper.realIndex === 2) {
                         $('.gotop').addClass('show');
                         // addAnimateClass(['.title_p3', '.detail_p3']);
                         $('.swiper-slide')[2].classList.add('scrollable');
-                        $('.depth_1')[1].classList.add('active');
-                        $('.depth_2')[0].classList.add('active');
-                        $('.depth_2')[0].classList.add('point');
+                        $('.depth_1')[0].classList.add('active');
+                        $('.depth_2')[1].classList.add('active');
+                        $('.depth_2')[1].classList.add('point');
                     } else if (swiper.realIndex === 3) {
                         $('.gotop').addClass('show');
                         // addAnimateClass(['.title_p4', '.bg_p4']);
                         $('.swiper-slide')[3].classList.add('scrollable');
-                        $('.depth_1')[1].classList.add('active');
-                        $('.depth_2')[1].classList.add('active');
-                        $('.depth_2')[1].classList.add('point');
+                        $('.depth_1')[0].classList.add('active');
+                        $('.depth_2')[2].classList.add('active');
+                        $('.depth_2')[2].classList.add('point');
                     } else if (swiper.realIndex === 4) {
                         $('.gotop').addClass('show');
                         // addAnimateClass(['.visible-roomy', '.title_p5', '.detail_p5']);
                         $('.swiper-slide')[4].classList.add('scrollable');
-                        $('.depth_1')[1].classList.add('active');
-                        $('.depth_2')[2].classList.add('active');
-                        $('.depth_2')[2].classList.add('point');
+                        $('.depth_1')[0].classList.add('active');
+                        $('.depth_2')[3].classList.add('active');
+                        $('.depth_2')[3].classList.add('point');
                     }
                 },
             }

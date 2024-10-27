@@ -166,12 +166,15 @@
 }
 
 .nav_side ol li.active.depth_1 button {
-    color: #fff;
+    color: e6e6e6;
     text-shadow: 0 0 5px #d68c3d, 0 0 10px #d68c3d, 0 0 10px #d68c3d;
 }
 
 .nav_side ol li.depth_1 button {
-    font-weight: 500;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .nav_side ol li button {
@@ -212,8 +215,11 @@
 }
 
 .nav_side ol li.depth_2 button {
-    color: #968a7d;
-    font-size: 16px;
+    color: e6e6e6;
+    font-size: 20px;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .nav_side ol li.active.depth_2 button {
@@ -520,13 +526,13 @@ section.area .content .content_wrap .header .title span {
     align-items: center;
     color: #e8e4e0;
     display: flex;
-    font-family: WarsOfPrasia, serif;
-    font-size: 34px;
-    font-weight: 300;
+    font-size: 30px;
     letter-spacing: .1em;
-    /* margin-top: 214px; */
     margin-top: 20px;
     white-space: nowrap;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_hero .content .detail_p1 .date:after,
@@ -586,7 +592,9 @@ section.area .content .content_wrap .header .title_p2.color_1 {
 
 section.area .content .content_wrap .header .title_p2 {
     display: flex;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     position: relative;
     text-align: center;
     width: auto;
@@ -613,7 +621,7 @@ section.area .content .content_wrap .header .title_p2:before {
 }
 
 section.area .content .content_wrap .header .title_p2.color_1 span {
-    color: #fff;
+    color: #ffffff;
 }
 
 section.area .content .content_wrap .header .title_p2 span {
@@ -625,10 +633,6 @@ section.area .content .content_wrap .header .title_p2.color_1 strong {
     color: #ffebcb;
 }
 
-section.area .content .content_wrap .header .title_p2 strong {
-    font-weight: 400;
-}
-
 section.area .content .content_wrap .header .detail_p2 {
     margin-top: 24px;
     white-space: wrap;
@@ -638,6 +642,9 @@ section.area .content .content_wrap .header .detail_p2 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_krohn .content .subcontent {
@@ -688,6 +695,9 @@ section.area .content .content_wrap .header .detail_p2 p {
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_krohn .content .arealist li:before {
@@ -783,6 +793,9 @@ section.area .content .content_wrap .header .title_p3:before {
 
 section.area .content .content_wrap .header .title_p3.color_1 span {
     color: #fff;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 section.area .content .content_wrap .header .title_p3 span {
@@ -794,10 +807,6 @@ section.area .content .content_wrap .header .title_p3.color_1 strong {
     color: #ffebcb;
 }
 
-section.area .content .content_wrap .header .title_p3 strong {
-    font-weight: 400;
-}
-
 section.area .content .content_wrap .header .detail_p3 {
     margin-top: 24px;
     white-space: wrap;
@@ -807,6 +816,9 @@ section.area .content .content_wrap .header .detail_p3 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_ground .content .subcontent {
@@ -898,7 +910,9 @@ section.area .content .content_wrap .header .title_p4.color_1 {
 
 section.area .content .content_wrap .header .title_p4 {
     display: flex;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     position: relative;
     text-align: center;
     width: auto;
@@ -937,10 +951,6 @@ section.area .content .content_wrap .header .title_p4.color_1 strong {
     color: #ffebcb;
 }
 
-section.area .content .content_wrap .header .title_p4 strong {
-    font-weight: 400;
-}
-
 section.area .content .content_wrap .header .detail_p4 {
     margin-top: 24px;
     white-space: wrap;
@@ -950,6 +960,9 @@ section.area .content .content_wrap .header .detail_p4 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_boss .content .subcontent {
@@ -972,7 +985,9 @@ section.area .content .content_wrap .header .title_p5.color_1 {
 
 section.area .content .content_wrap .header .title_p5 {
     display: flex;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     position: relative;
     text-align: center;
     width: auto;
@@ -1011,10 +1026,6 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     color: #ffebcb;
 }
 
-section.area .content .content_wrap .header .title_p5 strong {
-    font-weight: 400;
-}
-
 .section_npc .content .header .subtitle {
     align-items: center;
     background-image: url(../img/page5/ornate_subtitle_1.png);
@@ -1026,6 +1037,7 @@ section.area .content .content_wrap .header .title_p5 strong {
     font-size: 20px;
     height: 54px;
     justify-content: center;
+
     margin-top: 8px;
     width: 254px;
 }
@@ -1206,7 +1218,9 @@ section.area .content .content_wrap .header .title_p5 strong {
 
 .section_npc .content .subcontent .list li button span {
     color: #dbdbdb;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 17px;
     margin-bottom: 45px;
     margin-top: auto;
@@ -1333,13 +1347,17 @@ section.area .content .content_wrap .header .title_p5 strong {
     filter: drop-shadow(0 3px 7px rgba(0, 0, 0, .35));
     font-size: 38px;
     -webkit-text-fill-color: #0000;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .section_npc .content .info .info_wrap .name span {
     color: #fff5d3;
     font-size: 20px;
-    font-weight: 600;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .section_npc .content .info .info_wrap .arrow {
@@ -1358,6 +1376,9 @@ section.area .content .content_wrap .header .title_p5 strong {
 .section_npc .content .info .info_wrap p {
     color: #fff;
     font-size: 20px;
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @media (min-width: 1200px) {
@@ -1610,7 +1631,7 @@ section.area .content .content_wrap .header .title_p5 strong {
     }
 
     .section_boss .content .header {
-        margin-bottom: calc(150px + 22vh);
+        margin-bottom: calc(60vh - 50px);
     }
 
     section.area .content .content_wrap .header .title_p4:before {
@@ -1734,7 +1755,7 @@ section.area .content .content_wrap .header .title_p5 strong {
     }
 
     .section_npc .content .info {
-        height: calc(44vh - 130px) !important;
+        height: calc(35vh - 130px) !important;
     }
 
     .section_npc .content .info .info_wrap {
