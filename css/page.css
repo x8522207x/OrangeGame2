@@ -166,12 +166,12 @@
 }
 
 .nav_side ol li.active.depth_1 button {
-    color: e6e6e6;
+    color: #e6e6e6;
     text-shadow: 0 0 5px #d68c3d, 0 0 10px #d68c3d, 0 0 10px #d68c3d;
 }
 
 .nav_side ol li.depth_1 button {
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -215,16 +215,17 @@
 }
 
 .nav_side ol li.depth_2 button {
-    color: e6e6e6;
+    color: #e6e6e6;
     font-size: 20px;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
 .nav_side ol li.active.depth_2 button {
-    color: #b2885b;
-    font-weight: 600;
+    /* color: #b2885b; */
+    text-shadow: 0 0 5px #d68c3d, 0 0 10px #d68c3d, 0 0 10px #d68c3d;
+    font-weight: 400;
 }
 
 .section-pages.swiper-vertical {
@@ -460,14 +461,14 @@ section.area .content .content_wrap .header {
     font-size: 36px;
     white-space: nowrap;
     -webkit-text-fill-color: #0000;
-    font-family: source-han-serif-tc, serif;
+    font-family: "Noto Serif TC", serif;
     font-style: normal;
     font-weight: 300;
 }
 
 section.area .content .content_wrap .header .title {
     display: flex;
-    font-family: WarsOfPrasia, serif;
+    /* font-family: WarsOfPrasia, serif; */
     position: relative;
     text-align: center;
     width: auto;
@@ -531,7 +532,7 @@ section.area .content .content_wrap .header .title span {
     letter-spacing: .1em;
     margin-top: 20px;
     white-space: nowrap;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -593,7 +594,7 @@ section.area .content .content_wrap .header .title_p2.color_1 {
 
 section.area .content .content_wrap .header .title_p2 {
     display: flex;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -643,7 +644,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -696,7 +697,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -730,7 +731,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     background-size: contain;
     color: #dcc1a8;
     display: inline-flex;
-    font-family: source-han-serif-tc, serif;
+    font-family: "Noto Serif TC", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -768,7 +769,7 @@ section.area .content .content_wrap .header .title_p3.color_1 {
 
 section.area .content .content_wrap .header .title_p3 {
     display: flex;
-    font-family: WarsOfPrasia, serif;
+    /* font-family: WarsOfPrasia, serif; */
     position: relative;
     text-align: center;
     width: auto;
@@ -796,7 +797,7 @@ section.area .content .content_wrap .header .title_p3:before {
 
 section.area .content .content_wrap .header .title_p3.color_1 span {
     color: #fff;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
 }
@@ -819,7 +820,7 @@ section.area .content .content_wrap .header .detail_p3 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -913,7 +914,7 @@ section.area .content .content_wrap .header .title_p4.color_1 {
 
 section.area .content .content_wrap .header .title_p4 {
     display: flex;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -963,7 +964,7 @@ section.area .content .content_wrap .header .detail_p4 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -988,7 +989,7 @@ section.area .content .content_wrap .header .title_p5.color_1 {
 
 section.area .content .content_wrap .header .title_p5 {
     display: flex;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -1040,7 +1041,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     font-size: 20px;
     height: 54px;
     justify-content: center;
-    font-family: source-han-serif-tc, serif;
+    font-family: "Noto Serif TC", serif;
     font-style: normal;
     font-weight: 400;
     margin-top: 8px;
@@ -1223,7 +1224,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 
 .section_npc .content .subcontent .list li button span {
     color: #dbdbdb;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -1294,7 +1295,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: max(260px, 24vh);
+    height: max(180px, 20vh);
     justify-content: center;
     left: 0;
     max-width: unset !important;
@@ -1336,13 +1337,14 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     flex: 0 0 auto;
     height: 100px;
     width: 100px;
+    margin-bottom: 20px;
 }
 
 .section_npc .content .info .info_wrap .name {
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-basis: 205px;
+    flex-basis: 285px;
 }
 
 .section_npc .content .info .info_wrap .name strong {
@@ -1352,7 +1354,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     filter: drop-shadow(0 3px 7px rgba(0, 0, 0, .35));
     font-size: 38px;
     -webkit-text-fill-color: #0000;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 700;
 }
@@ -1360,7 +1362,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 .section_npc .content .info .info_wrap .name span {
     color: #fff5d3;
     font-size: 20px;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -1381,15 +1383,15 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 .section_npc .content .info .info_wrap p {
     color: #fff;
     font-size: 20px;
-    font-family: source-han-sans-cjk-tc, sans-serif;
+    font-family: "Noto Serif TC", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
 @media (min-width: 1200px) {
-    section.area .content .content_wrap .header {
+    /* section.area .content .content_wrap .header {
         margin-top: 150px;
-    }
+    } */
 
     /* #page4 {
         position: unset;
@@ -1460,6 +1462,10 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 
     section.area .content .content_wrap .header {
         position: unset;
+    }
+
+    .section_hero .content .content_wrap .header {
+        margin-top: 150px !important;
     }
 
     .section_hero .content .header .subtitle {
@@ -1703,7 +1709,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
         flex-direction: column;
         margin-left: auto !important;
         margin-right: 0 !important;
-        min-width: 50%;
+        /* min-width: 50%; */
     }
 
     .section_npc .content .subcontent .list li:first-child {
@@ -1826,6 +1832,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 
     .section_npc .content .subcontent .list {
         margin: 0 auto;
+        z-index: 1;
     }
 
     .section_npc .content .subcontent .list li {

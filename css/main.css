@@ -1048,7 +1048,7 @@ html {
 .event_banner_content .event_banner_menu .event_banner_menu_button {
     align-items: center;
     display: inline-flex;
-    font-family: WarsOfPrasia, serif;
+    font-family: 'noto serif tc', serif;
     height: 100%;
     justify-content: center;
     width: 100%;

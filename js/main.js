@@ -101,7 +101,6 @@ $(document).ready(() => {
                             if (swiper.realIndex === 0) {
                                 if (isAtBottom && e.deltaY > 0) {
                                     swiper.slideTo(swiper.realIndex + 1);
-
                                 }
                             } else if ([1, 2, 3].includes(swiper.realIndex)) {
                                 if (isAtTop && e.deltaY < 0) {
@@ -117,7 +116,11 @@ $(document).ready(() => {
                         }, { passive: true });
 
                         node.addEventListener('touchmove', function (e) {
-                            handleSmallHeight(swiper, e);
+                            if ($(window).height() < 1100) {
+                                handleSmallHeight(swiper, e);
+                            } else {
+                                swiper.allowTouchMove = true;
+                            }
                         }, { passive: true });
 
                         node.addEventListener('touchstart', function (e) {
@@ -201,10 +204,15 @@ $(document).ready(() => {
             autoHeight: true,
             speed: 1000,
             passiveListeners: false,
+            allowTouchMove: true,
             on: {
                 init: (swiper) => {
                     $('.gotop').on('click', () => {
                         swiper.slideTo(0);
+                    });
+
+                    $('.scroll').on('click', () => {
+                        swiper.slideTo(1);
                     });
                 },
                 slideChange: (swiper) => {
@@ -229,6 +237,7 @@ $(document).ready(() => {
 const handleSmallHeight = (swiper, event) => {
     swiper.allowTouchMove = true;
     event.stopPropagation();
+
     const currentY = event.touches[0].clientY;
     let direction = '';
     if (currentY > startY) {
