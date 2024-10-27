@@ -457,11 +457,12 @@ section.area .content .content_wrap .header {
     -webkit-background-clip: text;
     background-clip: text;
     display: inline-block;
-    font-size: 43px;
-    font-weight: 300;
+    font-size: 36px;
     white-space: nowrap;
     -webkit-text-fill-color: #0000;
-    font-family: Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+    font-family: source-han-serif-tc, serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 section.area .content .content_wrap .header .title {
@@ -729,7 +730,9 @@ section.area .content .content_wrap .header .detail_p2 p {
     background-size: contain;
     color: #dcc1a8;
     display: inline-flex;
-    font-family: WarsOfPrasia, serif;
+    font-family: source-han-serif-tc, serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
     height: 82px;
     justify-content: center;
@@ -1037,7 +1040,9 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     font-size: 20px;
     height: 54px;
     justify-content: center;
-
+    font-family: source-han-serif-tc, serif;
+    font-style: normal;
+    font-weight: 400;
     margin-top: 8px;
     width: 254px;
 }
