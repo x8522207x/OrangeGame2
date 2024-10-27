@@ -1365,9 +1365,9 @@ section.area .content .content_wrap .header .title_p5 strong {
         margin-top: 150px;
     }
 
-    #page4 {
+    /* #page4 {
         position: unset;
-    }
+    } */
 }
 
 @media (min-width: 769px) {

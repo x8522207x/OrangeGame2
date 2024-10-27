@@ -1,3 +1,4 @@
+let startY = 0;
 $(document).ready(() => {
     $('.modal_wrap').css('display', 'none');
     setTimeout(() => {
@@ -78,6 +79,9 @@ $(document).ready(() => {
                 init: (swiper) => {
                     $('.gotop').on('click', () => {
                         swiper.slideTo(0);
+                        swiper.slides.forEach(slide => {
+                            slide.scrollTop = 0;
+                        })
                     });
                     $('.UNI-footer').css('display', 'none');
 
@@ -85,7 +89,6 @@ $(document).ready(() => {
                         swiper.slideTo(1);
                     });
 
-                    // if ($(window).width() > 1200) {
                     document.querySelectorAll('.swiper-slide').forEach(node => {
                         node.addEventListener('wheel', e => {
                             e.stopPropagation();
@@ -116,8 +119,11 @@ $(document).ready(() => {
                         node.addEventListener('touchmove', function (e) {
                             handleSmallHeight(swiper, e);
                         }, { passive: true });
+
+                        node.addEventListener('touchstart', function (e) {
+                            startY = e.touches[0].clientY;
+                        }, { passive: true });
                     });
-                    // }
                 },
                 slideChange: (swiper) => {
                     // const removeAnimate = ['#p1Video', '.detail_p1', '.title', '.detail_p2', '.title', '.title_p2', '.dimmed_p2', '.title_p3', '.detail_p3', '.title_p4', '.bg_p4', '.visible-roomy'];
@@ -162,22 +168,6 @@ $(document).ready(() => {
                         $('.depth_2')[2].classList.add('point');
                     }
                 },
-                // touchStart: (swiper, event) => {
-                //     if ($(window).width() <= 1200 && $(window).height() < 1100) {
-                //         console.log(event.scrollTop)
-                //         handleSmallHeight(swiper, event);
-                //     } else if ($(window).width() <= 1200 && $(window).height() >= 1100) {
-                //         swiper.allowTouchMove = true;
-                //     }
-                // },
-
-                // touchMove: (swiper, event) => {
-                //     if ($(window).width() <= 1200 && $(window).height() < 1100) {
-                //         handleSmallHeight(swiper, event);
-                //     } else if ($(window).width() <= 1200 && $(window).height() >= 1100) {
-                //         swiper.allowTouchMove = true;
-                //     }
-                // }
             }
         });
 
@@ -211,22 +201,16 @@ $(document).ready(() => {
             speed: 1000,
             passiveListeners: false,
             on: {
-                init: () => {
-                    window.addEventListener('scroll', () => {
-                        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                        if (scrollTop > 0) {
-                            $('.gotop').addClass('show');
-                        } else {
-                            $('.gotop').removeClass('show');
-                        }
-                    });
-
+                init: (swiper) => {
                     $('.gotop').on('click', () => {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
+                        swiper.slideTo(0);
                     });
+                },
+                slideChange: (swiper) => {
+                    $('.gotop').removeClass('show');
+                    if (swiper.realIndex !== 0) {
+                        $('.gotop').addClass('show');
+                    }
                 }
             }
         });
@@ -242,35 +226,34 @@ $(document).ready(() => {
 });
 
 const handleSmallHeight = (swiper, event) => {
-
+    swiper.allowTouchMove = true;
     event.stopPropagation();
-    if ((1100 - document.querySelectorAll('.swiper-slide')[swiper.realIndex].scrollTop) === $(window).height()) {
-        swiper.slideTo(swiper.realIndex + 1);
-    } else if (document.querySelectorAll('.swiper-slide')[swiper.realIndex].scrollTop === 0) {
-        swiper.slideTo(swiper.realIndex - 1);
+    const currentY = event.touches[0].clientY;
+    let direction = '';
+    if (currentY > startY) {
+        direction = 'down';  // 向下移动
+    } else if (currentY < startY) {
+        direction = 'up';    // 向上移动
     }
-    // const currentSlide = swiper.slides[swiper.activeIndex];
-    // const slideScrollTop = currentSlide.scrollTop;
-    // const scrollHeight = currentSlide.scrollHeight;
-    // const clientHeight = currentSlide.clientHeight;
-    // const isAtTop = slideScrollTop === 0;
-    // const isAtBottom = (slideScrollTop + clientHeight >= scrollHeight);
-    // if (swiper.realIndex === 0) {
-    //     if (isAtBottom && event.deltaY > 0) {
-    //         swiper.slideTo(swiper.realIndex + 1);
 
-    //     }
-    // } else if ([1, 2, 3].includes(swiper.realIndex)) {
-    //     if (isAtTop && event.deltaY < 0) {
-    //         swiper.slideTo(swiper.realIndex - 1);
-    //     } else if (isAtBottom && event.deltaY > 0) {
-    //         swiper.slideTo(swiper.realIndex + 1);
-    //     }
-    // } else {
-    //     if (isAtTop && event.deltaY < 0) {
-    //         swiper.slideTo(swiper.realIndex - 1);
-    //     }
-    // }
+    const currentSlide = swiper.slides[swiper.activeIndex];
+    const slideScrollTop = currentSlide.scrollTop;
+    const scrollHeight = currentSlide.scrollHeight;
+    const clientHeight = currentSlide.clientHeight;
+    const isAtTop = slideScrollTop === 0;
+    const isAtBottom = (slideScrollTop + clientHeight >= scrollHeight);
+
+    if (isAtTop) {
+        if (swiper.realIndex !== 0) {
+            if (direction === 'down') {
+                swiper.slideTo(swiper.realIndex - 1);
+            }
+        }
+    } else if (isAtBottom) {
+        if (direction === 'up') {
+            swiper.slideTo(swiper.realIndex + 1);
+        }
+    }
 };
 
 const addPageClick = (index, swiper) => {
