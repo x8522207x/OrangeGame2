@@ -224,11 +224,17 @@ $(document).ready(() => {
                     $('.scroll').on('click', () => {
                         swiper.slideTo(1);
                     });
+                    $('.UNI-footer').css('display', 'none');
                 },
                 slideChange: (swiper) => {
                     $('.gotop').removeClass('show');
+                    $('.UNI-footer').css('display', 'none');
                     if (swiper.realIndex !== 0) {
                         $('.gotop').addClass('show');
+                    }
+
+                    if (swiper.realIndex === 4) {
+                        $('.UNI-footer').css('display', 'block');
                     }
                 }
             }
