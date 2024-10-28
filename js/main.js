@@ -92,7 +92,7 @@ $(document).ready(() => {
                             slide.scrollTop = 0;
                         })
                     });
-                    $('.UNI-footer').css('display', 'none');
+                    // $('.UNI-footer').css('display', 'none');
 
                     $('.scroll').on('click', () => {
                         swiper.slideTo(1);
@@ -144,7 +144,7 @@ $(document).ready(() => {
                     $('.swiper-slide').off('scroll');
                     $('.swiper-slide').removeClass('scrollable');
                     $('.gotop').removeClass('show');
-                    $('.UNI-footer').css('display', 'none');
+                    // $('.UNI-footer').css('display', 'none');
 
                     if (swiper.realIndex === 0) {
                         // addAnimateClass(['.detail_p1', '.title']);
