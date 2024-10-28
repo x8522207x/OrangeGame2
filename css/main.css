@@ -318,7 +318,7 @@ html {
     pointer-events: all;
     position: absolute;
     top: 0;
-    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
     width: 100%;
     z-index: 2;
 }
@@ -947,7 +947,8 @@ html {
 }
 
 .event_banner.-open .event_banner_content {
-    width: 170px;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .event_banner.-open .event_banner_content .event_banner_menu .event_banner_menu_button:before,
@@ -1002,10 +1003,10 @@ html {
     pointer-events: all;
     position: absolute;
     top: 0;
-    /* transform: translate3d(-100%, 0, 0); */
+    transform: translate3d(-100%, 0, 0);
     transition: transform .4s cubic-bezier(.33, 1, .68, 1);
-    /* width: 170px; */
-    width: 0px;
+    width: 170px;
+    /* width: 0px; */
     will-change: transform, margin-top;
 }
 
@@ -1501,7 +1502,7 @@ button {
 @keyframes modalSpinner {
     0% {
         animation-timing-function: cubic-bezier(.32, 0, .67, 0);
-        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
     }
 
     33% {
@@ -1517,7 +1518,7 @@ button {
 
     100% {
         animation-timing-function: cubic-bezier(.33, 1, .68, 1);
-        transform: translateZ(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
