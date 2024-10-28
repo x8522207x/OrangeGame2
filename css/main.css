@@ -947,7 +947,8 @@ html {
 }
 
 .event_banner.-open .event_banner_content {
-    transform: translateZ(0);
+    /* transform: translateZ(0); */
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .event_banner.-open .event_banner_content .event_banner_menu .event_banner_menu_button:before,
@@ -982,7 +983,7 @@ html {
     pointer-events: none;
     position: absolute;
     top: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    /* transform: translate3d(-50%, -50%, 0); */
     transition: transform .2s ease;
     width: 73%;
 }
