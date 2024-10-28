@@ -171,7 +171,7 @@
 }
 
 .nav_side ol li.depth_1 button {
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -217,7 +217,7 @@
 .nav_side ol li.depth_2 button {
     color: #e6e6e6;
     font-size: 20px;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -461,7 +461,7 @@ section.area .content .content_wrap .header {
     font-size: 36px;
     white-space: nowrap;
     -webkit-text-fill-color: #0000;
-    font-family: "Noto Serif TC", serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 300;
 }
@@ -532,7 +532,7 @@ section.area .content .content_wrap .header .title span {
     letter-spacing: .1em;
     margin-top: 20px;
     white-space: nowrap;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -594,7 +594,7 @@ section.area .content .content_wrap .header .title_p2.color_1 {
 
 section.area .content .content_wrap .header .title_p2 {
     display: flex;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -644,7 +644,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -697,7 +697,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -731,7 +731,7 @@ section.area .content .content_wrap .header .detail_p2 p {
     background-size: contain;
     color: #dcc1a8;
     display: inline-flex;
-    font-family: "Noto Serif TC", serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -797,7 +797,7 @@ section.area .content .content_wrap .header .title_p3:before {
 
 section.area .content .content_wrap .header .title_p3.color_1 span {
     color: #fff;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
 }
@@ -820,7 +820,7 @@ section.area .content .content_wrap .header .detail_p3 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -914,7 +914,7 @@ section.area .content .content_wrap .header .title_p4.color_1 {
 
 section.area .content .content_wrap .header .title_p4 {
     display: flex;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -964,7 +964,7 @@ section.area .content .content_wrap .header .detail_p4 p {
     color: #c9c1b8;
     font-size: 20px;
     text-align: center;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -989,7 +989,7 @@ section.area .content .content_wrap .header .title_p5.color_1 {
 
 section.area .content .content_wrap .header .title_p5 {
     display: flex;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     position: relative;
@@ -1041,7 +1041,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     font-size: 20px;
     height: 54px;
     justify-content: center;
-    font-family: "Noto Serif TC", serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
     margin-top: 8px;
@@ -1225,7 +1225,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 
 .section_npc .content .subcontent .list li button span {
     color: #dbdbdb;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -1355,7 +1355,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     filter: drop-shadow(0 3px 7px rgba(0, 0, 0, .35));
     font-size: 38px;
     -webkit-text-fill-color: #0000;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 700;
 }
@@ -1363,7 +1363,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 .section_npc .content .info .info_wrap .name span {
     color: #fff5d3;
     font-size: 20px;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -1384,7 +1384,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 .section_npc .content .info .info_wrap p {
     color: #fff;
     font-size: 20px;
-    font-family: "Noto Serif TC", sans-serif;
+    font-family: "source-han-serif-tc", serif;
     font-style: normal;
     font-weight: 400;
 }
