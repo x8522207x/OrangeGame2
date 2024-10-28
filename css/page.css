@@ -201,17 +201,17 @@
     background-image: url(../img/icon/side_ornate_active.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     content: "";
     display: inline-block;
     filter: drop-shadow(0 0 10px #d68c3d);
-    height: 13px;
+    height: 15px;
     margin-left: 10px;
     margin-right: 20px;
     opacity: 0;
     transform: translate(10px);
     transition: opacity .3s cubic-bezier(.33, 1, .68, 1), transform .3s cubic-bezier(.33, 1, .68, 1), background-image .3s ease;
-    width: 13px;
+    width: 15px;
 }
 
 .nav_side ol li.depth_2 button {
@@ -1174,6 +1174,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 .section_npc .content .subcontent .list {
     display: flex;
     margin-left: auto;
+    z-index: 3;
 }
 
 .section_npc .content .subcontent .list li:first-child {
@@ -1827,12 +1828,10 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
 
     .section_npc .content .subcontent .portrait {
         transform: translate3d(-52%, 0, 0);
-        z-index: 0;
     }
 
     .section_npc .content .subcontent .list {
         margin: 0 auto;
-        z-index: 1;
     }
 
     .section_npc .content .subcontent .list li {
