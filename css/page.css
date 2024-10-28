@@ -1063,7 +1063,7 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     position: absolute;
     transform: translate3d(-88%, 0, 0);
     width: 1185px;
-    z-index: 2;
+    z-index: -1;
 }
 
 .section_npc .content .subcontent .portrait span:first-child {
