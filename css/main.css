@@ -1423,7 +1423,7 @@ button {
 
     .event_banner_content {
         margin-top: 0 !important;
-        width: 220px;
+        width: 220px !important;
     }
 
     .event_banner_content .event_banner_home ._logo>img {
