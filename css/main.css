@@ -1203,15 +1203,6 @@ html {
     z-index: 2;
 }
 
-.event_banner_content .event_banner_list ul li .event_banner_item .content {
-    color: #858585;
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: 4px;
-    text-align: center;
-    transition: color .3s ease;
-}
-
 .event_banner_content .event_banner_list ul li .event_banner_item .image {
     filter: grayscale(1);
     position: relative;
@@ -1228,7 +1219,7 @@ html {
 
 .event_banner_content .event_banner_list ul li .event_banner_item .content {
     color: #858585;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     margin-top: 4px;
     text-align: center;

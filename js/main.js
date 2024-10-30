@@ -86,6 +86,10 @@ $(document).ready(() => {
             allowTouchMove: false,
             on: {
                 init: (swiper) => {
+                    $('.UNI-footer').clone().appendTo('.section_npc');
+                    $('.UNI-footer')[1]?.remove();
+                    $('.UNI-footer').css('z-index', 100).css('bottom', 0).css('position', 'absolute').css('width', '100%').css('height', 80);
+
                     $('.gotop').on('click', () => {
                         swiper.slideTo(0);
                         swiper.slides.forEach(slide => {
