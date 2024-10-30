@@ -1395,27 +1395,13 @@ section.area .content .content_wrap .header .title_p5.color_1 strong {
     font-weight: 400;
 }
 
-@media (min-width: 1200px) {
-    /* section.area .content .content_wrap .header {
-        margin-top: 150px;
-    } */
-
-    /* #page4 {
-        position: unset;
-    } */
-}
-
 @media (min-width: 769px) {
     .section_npc .content .info .info_wrap p {
-        margin-top: 25px;
-    }
-
-    .section_npc .content .info .info_wrap .name {
-        margin-top: 15px;
+        flex-basis: calc(100vw - 409px);
     }
 
     .section_npc .content .info .info_wrap {
-        align-items: start;
+        align-items: center;
     }
 
     section.area {
